@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>$loop->run() Barcelona 2020</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/slashslash.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+    <style>
+        .service-content-area:hover a {
+            color: #e1b12c;
+            font-weight: bold;
+        }
+
+        .tool {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+
+        .tool img {
+            height: 1em;
+            width: 1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="scrollIndicator"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Logo -->
+        <a href="#home" class="nav-brand"><img src="img/logo.png" alt=""></a>
+
+        <!-- Menu -->
+        <div class="dornee-menu pl-5">
+            <nav class="dorneenav">
+                <ul id="nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about-the-conference">About the conference</a></li>
+                    <li>The schedule</li>
+                    <li>The speakers</li>
+                    <li>Workshops</li>
+                    <li>Sponsors</li>
+                    <li>Book a ticket</li>
+                    <li><a href="#get-updated">Get updated</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Menu HideShow -->
+        <div class="menu-hideshow">
+            <div class="hamburger" id="ham">
+                <span class="a"></span>
+                <span class="b"></span>
+            </div>
+        </div>
+
+        <!-- Contact Me -->
+        <a href="#" class="contact-me-btn btn dornee-btn" id="contactMebtn">Contact</a>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-content">
+        <!-- ***** Welcome Area Start ***** -->
+        <section class="welcome-area bg-overlay" style="background-image: url(img/pattern.png); background-repeat: repeat" id="home">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Welcome Content -->
+                        <div class="welcome-content text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h5>March 2020 - Barcelona</h5>
+                            <h2>$loop->run();</h2>
+                            <p>Make your first steps in reactive programming with PHP<br> Tickets available soon.</p>
+                            <a href="https://forms.gle/Lxa2fvYtuQnZ5YDJA" class="btn dornee-btn mt-30" target="_blank">CFP now open!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Down Icon -->
+            <div class="down-icon wow fadeInUp" data-wow-delay="300ms" id="scrollDown">
+                <a href="#"><i class="arrow_down"></i></a>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+        <!-- ***** Service Area Start ***** -->
+        <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="about-the-conference">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>About the conference</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="http://php.coach" target="_blank">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Event-driven PHP projects</h4>
+                                    <p>Meet the projects that are actually leading the async, non-blocking and reactive features in PHP</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Icon -->
+                            <div class="service-icon">
+                                <i class="fa fa-bullhorn"></i>
+                            </div>
+                            <!-- Content text -->
+                            <div class="service-content-text">
+                                <h4>Talks</h4>
+                                <p>Some talks about projects, architecture and all features you need to start digging about this topic.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="http://apisearch.io" target="_blank">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Workshops</h4>
+                                    <p>We will prepare some workshops crafted for you. You will start working with these projects from the next day!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Icon -->
+                            <div class="service-icon">
+                                <i class="icon_link"></i>
+                            </div>
+                            <!-- Content text -->
+                            <div class="service-content-text">
+                                <h4>Meet the community</h4>
+                                <p>For the very first time, you'll be able to meet the PHP Non-Blocking community in one single place.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" target="_blank">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Online</h4>
+                                    <p>If you can't come to the conference, the conference will come to your home. Buy tickets to follow the conference online.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Icon -->
+                            <div class="service-icon">
+                                <i class="fa fa-bullhorn"></i>
+                            </div>
+                            <!-- Content text -->
+                            <div class="service-content-text">
+                                <h4>Donate</h4>
+                                <p>The 50% of the conference gains will be donated to some open source projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+
+        <!-- ***** Contact Area Start ***** -->
+        <section class="contact-me-area bg-white section-padding-100-0" id="get-updated">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>Get updated</h2>
+                        </div>
+                        <p>We will send you an email when tickets are available. We will not have many tickets this year, so if you're interested in the conference, we encourage you to subscribe :)</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-12 col-md-8">
+                        <div class="contact_from_area clearfix mb-100 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="contact_form">
+                                <form action="https://mmoreram.us3.list-manage.com/subscribe/post?u=c11fd3061a6f0d72f6464d2f4&amp;id=2388f12177"
+                                      method="post" id="mc-embedded-subscribe-form"
+                                      name="mc-embedded-subscribe-form" class="validate"
+                                      target="_blank" novalidate>
+                                    <div class="contact_input_area">
+                                        <div id="success_fail_info"></div>
+                                        <div class="row">
+                                            <!-- Form Group -->
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control mb-30" name="FNAME" id="mce-FNAME" placeholder="Your Name *" required>
+                                                </div>
+                                            </div>
+                                            <!-- Form Group -->
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control mb-30" name="EMAIL" id="mce-EMAIL" placeholder="E-mail *" required>
+                                                </div>
+                                            </div>
+                                            <!-- Button -->
+                                            <div class="col-12 text-center">
+                                                <button type="submit" class="btn dornee-btn w-100">Get subscribed</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="contact-information mb-100">
+                            <h4 class="mb-4 wow fadeInUp" data-wow-delay="300ms">Get In Touch</h4>
+
+                            <!-- Single Contact Info -->
+                            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                                <h6><i class="icon_pin_alt"></i> Address:</h6>
+                                <p>Barcelona Area</p>
+                            </div>
+                            <!-- Single Contact Info -->
+                            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                                <h6><i class="icon_mail_alt"></i> Email:</h6>
+                                <p>info@loop-run.io</p>
+                            </div>
+                            <!-- Single Contact Info -->
+                            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                                <h6><i class="icon_globe-2"></i> Website:</h6>
+                                <p>https://loop-run.io</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Contact Area End ***** -->
+
+
+
+        <!-- ***** Footer Area Start ***** -->
+        <footer class="footer-bottom-area section-padding-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer--content-text text-center">
+                            <div class="footer-social-icon d-flex align-items-center justify-content-center">
+                                <a href="https://twitter.com/loop_run" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="social_twitter"></i></a>
+                            </div>
+                            <p>Copyright ©2019 All rights reserved by <a href="#" target="_blank">Classy Theme</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ***** Footer Area End ***** -->
+    </div>
+
+    <!-- All JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
+    <script src="js/default/active.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-41917921-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-41917921-3');
+    </script>
+
+</body>
+
+</html>
