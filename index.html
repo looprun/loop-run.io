@@ -32,6 +32,25 @@
             height: 1em;
             width: 1em;
         }
+
+
+
+        #cfp ul li, #cfp ul li:hover {
+            list-style: inherit;
+            line-height: 32px;
+            color: #717273;
+            font-size: 16px;
+
+        }
+
+        #cfp ul  {
+            margin-left: 30px;
+        }
+
+        p.important {
+            padding-left: 20px;
+            border-left: red 10px solid;
+        }
     </style>
 
 </head>
@@ -56,14 +75,10 @@
             <nav class="dorneenav">
                 <ul id="nav">
                     <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about-the-conference">About the conference</a></li>
-                    <li><a href="https://forms.gle/Lxa2fvYtuQnZ5YDJA" target="_blank"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;CFP</a></li>
-                    <li>The schedule</li>
-                    <li>The speakers</li>
-                    <li>Workshops</li>
-                    <li>Sponsors</li>
-                    <li>Book a ticket</li>
-                    <li><a href="#get-updated">Get updated</a></li>
+                    <li><a href="/#about-the-conference">About the conference</a></li>
+                    <li><a href="/#cfp"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;CFP</a></li>
+                    <li><a href="/code-of-conduct.html">Code of conduct</a></li>
+                    <li><a href="/#get-updated">Get updated</a></li>
                 </ul>
             </nav>
         </div>
@@ -77,7 +92,7 @@
         </div>
 
         <!-- Contact Me -->
-        <a href="#" class="contact-me-btn btn dornee-btn" id="contactMebtn">Contact</a>
+        <a href="/#get-updated" class="contact-me-btn btn dornee-btn" id="contactMebtn">Get updated</a>
     </header>
     <!-- ***** Header Area End ***** -->
 
@@ -92,7 +107,7 @@
                             <h5>March 2020 - Barcelona</h5>
                             <h2>$loop->run();</h2>
                             <p>Make your first steps in reactive programming with PHP<br> Tickets available soon.</p>
-                            <a href="https://forms.gle/Lxa2fvYtuQnZ5YDJA" class="btn dornee-btn mt-30" target="_blank">CFP now open!</a>
+                            <a href="#cfp" class="btn dornee-btn mt-30" target="_blank">CFP now open!</a>
                         </div>
                     </div>
                 </div>
@@ -218,6 +233,50 @@
         <!-- ***** Service Area End ***** -->
 
 
+        <!-- ***** Service Area Start ***** -->
+        <section class="my-service-area bg-light section-padding-100-70 clearfix" id="cfp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>CFP</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Service Content Area -->
+                    <div class="col-12">
+                        <div class="mb-30">
+                            <!-- Content text -->
+                            <p>Loop Run Barcelona conference 2020 is a brand new conference, where everything related to PHP, non-blocking and reactive programming will happen during a whole day.</p>
+                            <p>In order to make the conference as interesting as we want to, we encourage absolutely everyone to submit, at least, one talk about these topics.</p>
+                            <p class="important">More diversity only possible with your help! Please, send us your proposal</p>
+                            <p>Here you have a small list with some ideas</p>
+                            <ul>
+                                <li>A talk about an existing library / framework</li>
+                                <li>A prove of concept you've done as a side project</li>
+                                <li>How these programming paradigm can change the language</li>
+                                <li>How to refactor an application with some libraries</li>
+                                <li>About the programming paradigm.</li>
+                                <li>About the performance. Benchmarking included</li>
+                                <li>Testing with Promises</li>
+                                <li>Promises Vs. Coroutines</li>
+                                <li>How could we standardize all this stuff?</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="https://forms.gle/Lxa2fvYtuQnZ5YDJA" class="btn dornee-btn mt-30" target="_blank">Submit your talk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+
         <!-- ***** Contact Area Start ***** -->
         <section class="contact-me-area bg-white section-padding-100-0" id="get-updated">
             <div class="container">
@@ -228,6 +287,10 @@
                             <h2>Get updated</h2>
                         </div>
                         <p>We will send you an email when tickets are available. We will not have many tickets this year, so if you're interested in the conference, we encourage you to subscribe :)</p>
+                        <p>
+                            As you will notice, once you send your personal information, we will ask you for GDPR confirmation. By giving us this right, we will be able to let you know when we have tickets
+                            available, when we publish some speakers or when we run som raffles. No spam, we promise.
+                        </p>
                     </div>
                 </div>
 
