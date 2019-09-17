@@ -298,7 +298,7 @@ img {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   border-radius: 0;
-  background-color: #e1b12c; }
+  background-color: #37b758; }
   #scrollUp:hover, #scrollUp:focus {
     background-color: #0c0c0c; }
   @media only screen and (max-width: 767px) {
@@ -406,7 +406,7 @@ textarea:invalid {
       top: 70px; } }
   .progress-container .progress-bar {
     height: 3px;
-    background: #e1b12c;
+    background: #37b758;
     width: 0%; }
 
 /* Shortcodes CSS */
@@ -423,7 +423,7 @@ textarea:invalid {
   padding: 0 20px;
   font-size: 14px;
   line-height: 53px;
-  background-color: #e1b12c;
+  background-color: #37b758;
   font-weight: 500;
   text-transform: uppercase; }
   @media only screen and (max-width: 767px) {
@@ -537,7 +537,7 @@ textarea:invalid {
   animation: load7 1.8s infinite ease-in-out; }
 
 .loader {
-  color: #e1b12c;
+  color: #37b758;
   font-size: 6px;
   position: relative;
   -webkit-transform: translateZ(0);
@@ -708,17 +708,17 @@ textarea:invalid {
     content: '';
     width: 0;
     height: 2px;
-    background-color: #e1b12c;
+    background-color: #37b758;
     right: 120%;
     top: 50%;
     margin-top: -1px; }
   .dorneenav li a:hover {
-    color: #e1b12c; }
+    color: #37b758; }
     .dorneenav li a:hover::before {
       width: 100px; }
 
 .dorneenav li.active a {
-  color: #e1b12c; }
+  color: #37b758; }
   .dorneenav li.active a::before {
     width: 100px; }
 
@@ -802,7 +802,7 @@ textarea:invalid {
   .menu-hideshow .hamburger {
     width: 40px;
     height: 40px;
-    background-color: #e1b12c;
+    background-color: #37b758;
     position: relative;
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
@@ -1064,7 +1064,7 @@ textarea:invalid {
       width: 100%;
       height: 100%;
       border-radius: 0;
-      background-color: #e1b12c;
+      background-color: #37b758;
       opacity: 0.8;
       content: '';
       top: 0;
@@ -1135,11 +1135,11 @@ textarea:invalid {
     -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
     box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35); }
     .service-content-area:hover .service-icon, .service-content-area:focus .service-icon {
-      color: #e1b12c; }
+      color: #37b758; }
     .service-content-area:hover .service-content-text h4,
     .service-content-area:hover .service-content-text p, .service-content-area:focus .service-content-text h4,
     .service-content-area:focus .service-content-text p {
-      color: #e1b12c; }
+      color: #37b758; }
 
 /* Video CSS */
 .my-video-area {
@@ -1156,7 +1156,7 @@ textarea:invalid {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-color: #e1b12c;
+    background-color: #37b758;
     border-radius: 50%;
     color: #ffffff;
     line-height: 67px;
@@ -1174,7 +1174,7 @@ textarea:invalid {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: -1;
-      background-color: #e1b12c;
+      background-color: #37b758;
       border-radius: 50%;
       -webkit-animation: videobtn linear 2s infinite;
       animation: videobtn linear 2s infinite; }
@@ -1397,13 +1397,13 @@ textarea:invalid {
       position: absolute;
       width: 0%;
       height: 2px;
-      background-color: #e1b12c;
+      background-color: #37b758;
       bottom: 0;
       left: 0;
       z-index: 1;
       content: ""; }
     .portfolio-menu .btn.active, .portfolio-menu .btn:hover, .portfolio-menu .btn:focus {
-      color: #e1b12c;
+      color: #37b758;
       box-shadow: none; }
       .portfolio-menu .btn.active::after, .portfolio-menu .btn:hover::after, .portfolio-menu .btn:focus::after {
         width: 100%; }
@@ -1485,7 +1485,7 @@ img.mfp-img {
     margin-bottom: 10px; }
     .clients-feedback-area .star-icon i {
       font-size: 14px;
-      color: #e1b12c; }
+      color: #37b758; }
   .clients-feedback-area .client-description > p {
     margin-bottom: 15px;
     font-size: 18px;
@@ -1627,7 +1627,7 @@ textarea.form-control {
   width: 700px;
   top: 50%;
   left: 50%;
-  background-color: #e1b12c;
+  background-color: #37b758;
   -webkit-transform: translate(-50%, -50%) rotate(5deg);
   -ms-transform: translate(-50%, -50%) rotate(5deg);
   transform: translate(-50%, -50%) rotate(5deg);
@@ -1715,7 +1715,7 @@ textarea.form-control {
     color: #ffffff;
     line-height: 1; }
     .footer-bottom-area .footer-social-icon a:hover, .footer-bottom-area .footer-social-icon a:focus {
-      color: #e1b12c; }
+      color: #37b758; }
   .footer-bottom-area .footer--content-text p {
     color: #ffffff;
     margin-bottom: 0;
@@ -1729,7 +1729,7 @@ textarea.form-control {
         .footer-bottom-area .footer--content-text p a {
           font-size: 14px; } }
       .footer-bottom-area .footer--content-text p a:hover, .footer-bottom-area .footer--content-text p a:focus {
-        color: #e1b12c; }
+        color: #37b758; }
 
 /* Blog CSS */
 .single-post-area {
@@ -1768,7 +1768,7 @@ textarea.form-control {
         .single-post-area .post-content .post-title {
           font-size: 18px; } }
       .single-post-area .post-content .post-title:hover, .single-post-area .post-content .post-title:focus {
-        color: #e1b12c; }
+        color: #37b758; }
   .single-post-area:hover, .single-post-area:focus {
     -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.3);
     box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.3); }
@@ -1781,7 +1781,7 @@ textarea.form-control {
     line-height: 1.5;
     display: block;
     margin-bottom: 5px;
-    color: #e1b12c; }
+    color: #37b758; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .blog-details-text .post-title {
         font-size: 30px; } }
@@ -1813,7 +1813,7 @@ textarea.form-control {
           left: -20px;
           z-index: 1; }
       .blog-details-text .post-meta a:hover, .blog-details-text .post-meta a:focus {
-        color: #e1b12c; }
+        color: #37b758; }
   .blog-details-text p {
     font-size: 18px;
     margin-bottom: 30px; }
@@ -1826,7 +1826,7 @@ textarea.form-control {
   z-index: 1;
   margin-bottom: 30px;
   margin-top: 30px;
-  border-left: 3px solid #e1b12c;
+  border-left: 3px solid #37b758;
   padding-left: 20px; }
   .dornee-blockquote .text h5 {
     margin-bottom: 0;
@@ -1847,7 +1847,7 @@ textarea.form-control {
     color: #12131b;
     font-size: 14px; }
     .post-author-area .popular-tags li a:hover, .post-author-area .popular-tags li a:focus {
-      color: #e1b12c; }
+      color: #37b758; }
   .post-author-area .author-social-info p {
     margin-bottom: 0;
     margin-right: 20px;
@@ -1865,7 +1865,7 @@ textarea.form-control {
       .post-author-area .author-social-info a {
         margin-right: 10px; } }
     .post-author-area .author-social-info a:hover, .post-author-area .author-social-info a:focus {
-      color: #e1b12c; }
+      color: #37b758; }
 
 .comment_area {
   position: relative;
@@ -1924,7 +1924,7 @@ textarea.form-control {
       .comment_area .comment-content .comment-meta a.like:focus, .comment_area .comment-content .comment-meta a.like:hover,
       .comment_area .comment-content .comment-meta a.reply:focus,
       .comment_area .comment-content .comment-meta a.reply:hover {
-        background-color: #e1b12c;
+        background-color: #37b758;
         color: #ffffff; }
   .comment_area .children {
     margin-left: 50px; }
@@ -1973,7 +1973,7 @@ textarea.form-control {
             left: -100px;
             width: 60px; } }
     .experience-timeline .single-experience .works-year {
-      color: #e1b12c;
+      color: #37b758;
       margin-bottom: 0; }
     .experience-timeline .single-experience .designation {
       font-size: 20px; }
@@ -2010,7 +2010,7 @@ textarea.form-control {
         .education-timeline .single-education:nth-child(even) {
           margin-left: 30%; } }
     .education-timeline .single-education .course-completed-years {
-      color: #e1b12c;
+      color: #37b758;
       margin-bottom: 0; }
     .education-timeline .single-education .course-title {
       color: #ffffff; }
@@ -2041,7 +2041,7 @@ textarea.form-control {
     display: block;
     position: relative;
     z-index: 1;
-    background-color: #e1b12c;
+    background-color: #37b758;
     border-radius: 4px;
     -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.1);
     box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.1); }
@@ -2088,8 +2088,8 @@ textarea.form-control {
         display: block;
         width: 50px;
         height: 50px;
-        border: 2px solid #e1b12c;
-        background-color: #e1b12c;
+        border: 2px solid #37b758;
+        background-color: #37b758;
         text-align: center;
         line-height: 46px;
         border-radius: 50%;
