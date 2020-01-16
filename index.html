@@ -3,18 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>$loop->run() Barcelona 2020 - March 6-7, 2020</title>
+    <title>$loop->run() Barcelona 2020 - March 26-27, 2020</title>
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/ico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="icon" href="img/ico.ico" type="image/x-icon"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <style>
         .service-content-area:hover a {
@@ -34,7 +36,6 @@
         }
 
 
-
         #cfp ul li, #cfp ul li:hover {
             list-style: inherit;
             line-height: 32px;
@@ -43,7 +44,7 @@
 
         }
 
-        #cfp ul  {
+        #cfp ul {
             margin-left: 30px;
         }
 
@@ -56,8 +57,8 @@
             display: inline;
             height: inherit;
             width: inherit;
-            margin: 0!important;
-            padding: 0!important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
         .sponsor-types .element li {
@@ -92,7 +93,7 @@
         }
 
         .single-experience {
-            margin-top:10px;
+            margin-top: 10px;
             margin-bottom: 10px;
         }
 
@@ -120,827 +121,1233 @@
             position: relative;
             font-size: 52px;
         }
+
+        .single-experience img {
+            max-width: 1000px !important;
+        }
+
+        .bg-gray p {
+            color: #ffffff;
+        }
+
+        .bg-gray .fab {
+            color: #ffffff;
+        }
     </style>
 
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<div class="progress-container">
+    <div class="progress-bar" id="scrollIndicator"></div>
+</div>
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area">
+    <!-- Logo -->
+    <a href="#home" class="nav-brand"><img src="img/logo-small.png" alt=""
+                                           width="70%"></a>
+
+    <!-- Menu -->
+    <div class="dornee-menu pl-5">
+        <nav class="dorneenav">
+            <ul id="nav">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about-the-conference">About the conference</a>
+                </li>
+                <li><a href="our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our
+                    commitment</a></li>
+                <li><a href="#schedule"><i class="fa fa-star"
+                                           style="color: gold"></i>&nbsp;&nbsp;Schedule</a>
+                </li>
+                <li><a href="#workshops"><i class="fa fa-star"
+                                            style="color: gold"></i>&nbsp;&nbsp;Workshops</a>
+                </li>
+                <li><a href="#tickets"><i class="fa fa-ticket-alt"
+                                          style="color: gold"></i>&nbsp;&nbsp;Tickets
+                    available!</a></li>
+                <li><a href="#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a>
+                </li>
+                <li><a href="#venue"><i class="fa fa-school"></i>&nbsp;&nbsp;Venue</a>
+                </li>
+                <li><a href="code-of-conduct.html"><i
+                        class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Code
+                    of conduct</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="progress-container">
-        <div class="progress-bar" id="scrollIndicator"></div>
+    <!-- Menu HideShow -->
+    <div class="menu-hideshow">
+        <div class="hamburger" id="ham">
+            <span class="a"></span>
+            <span class="b"></span>
+        </div>
     </div>
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area">
-        <!-- Logo -->
-        <a href="#home" class="nav-brand"><img src="img/logo-small.png" alt="" width="70%"></a>
+    <!-- Contact Me -->
+    <a href="#tickets" class="contact-me-btn btn dornee-btn"
+       id="contactMebtn"><i class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Tickets</a>
+</header>
+<!-- ***** Header Area End ***** -->
 
-        <!-- Menu -->
-        <div class="dornee-menu pl-5">
-            <nav class="dorneenav">
-                <ul id="nav">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#about-the-conference">About the conference</a></li>
-                    <li><a href="our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our commitment</a></li>
-                    <li><a href="#schedule"><i class="fa fa-star" style="color: gold"></i>&nbsp;&nbsp;Schedule</a></li>
-                    <li><a href="#tickets"><i class="fa fa-ticket-alt" style="color: gold"></i>&nbsp;&nbsp;Tickets available!</a></li>
-                    <li><a href="#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a></li>
-                    <li><a href="#venue"><i class="fa fa-school"></i>&nbsp;&nbsp;Venue</a></li>
-                    <li><a href="code-of-conduct.html"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Code of conduct</a></li>
-                </ul>
-            </nav>
+<div class="page-content">
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="welcome-area bg-overlay"
+             style="background-image: url(img/pattern.png); background-repeat: repeat"
+             id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <!-- Welcome Content -->
+                    <div class="welcome-content text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <img src="img/logo-small.png" width="20%"
+                             alt="Conference logo"/>
+                        <h5><span style="font-size: 25px; font-weight: bold">6 - 7</span>
+                            March 2020 - Barcelona</h5>
+                        <h2>$loop->run();</h2>
+                        <p>Make your first steps in reactive programming with
+                            <strong>PHP</strong><br> Tickets available soon.</p>
+                        <a href="#tickets" class="btn dornee-btn mt-30"><i
+                                class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy
+                            tickets!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Down Icon -->
+        <div class="down-icon wow fadeInUp" data-wow-delay="300ms"
+             id="scrollDown">
+            <a href="#"><i class="arrow_down"></i></a>
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Service Area Start ***** -->
+    <section class="my-service-area section-padding-100-70 clearfix"
+             id="about-the-conference">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title -->
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>About the conference</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text">
+                            <h4>Event-driven PHP projects</h4>
+                            <p>Meet the projects that are actually leading the
+                                async, non-blocking and reactive features in
+                                PHP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text">
+                            <h4>Talks</h4>
+                            <p>You'll find talks about projects, architecture
+                                and all features you need to start digging about
+                                this topic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text">
+                            <h4>Workshops</h4>
+                            <p>We will prepare some workshops for you. You will
+                                start working with these projects from the next
+                                day!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon">
+                            <i class="icon_link"></i>
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text">
+                            <h4>Meet the community</h4>
+                            <p>For the very first time, you'll be able to meet
+                                the PHP Non-Blocking community from all around
+                                the world in one single place.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text">
+                            <h4>Reduced ticket
+                                price</h4>
+                            <p>We want this conference to be affordable by any
+                                budget, so we reduced as much as we could the
+                                ticket price.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon"
+                             style="color: #37b758!important">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text">
+                            <h4 style="color: #37b758!important">We Donate
+                                50%</h4>
+                            <p>The 50% of the conference profits will be donated
+                                to some open source projects. You can read <a
+                                        href="our-commitment.html">our
+                                    commitment</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="service-content-area-static text-center mb-30"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon"
+                             style="color: #37b758!important">
+                            <img src="img/projects/reactphp.png" alt="ReactPHP"
+                                 height="100">
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text mt-15">
+                            <p>ReactPHP is a low-level library for event-driven
+                                programming in PHP.<br/> Visit <a
+                                        href="https://reactphp.org/">https://reactphp.org</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Content Area -->
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="service-content-area-static text-center mb-30 wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <!-- Icon -->
+                        <div class="service-icon"
+                             style="color: #37b758!important">
+                            <img src="img/projects/swoole.png" alt="Swoole"
+                                 height="100">
+                        </div>
+                        <!-- Content text -->
+                        <div class="service-content-text mt-15">
+                            <p>#Swoole is an open source high-performance
+                                network framework using an event-driven,
+                                asynchronous, non-blocking I/O model which makes
+                                it scalable and efficient.. Visit <a
+                                        href="https://www.swoole.co.uk/">https://www.swoole.co.uk/</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Service Area End ***** -->
+
+
+    <!-- ***** My Experience Area Start ***** -->
+    <section class="my-experience-area section-padding-100 clearfix"
+             id="schedule">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Schedule - 26 March</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="experience-timeline">
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">09.00 - 09.15</h6>
+                            <h4 class="designation">Welcome</h4>
+                            <p>
+                                Welcome to the LoopRun conference.
+                            </p>
+                        </div>
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">09.15 - 10.00</h6>
+                            <h4 class="designation">Keynote</h4>
+                            <p>
+                                TBA
+                            </p>
+                        </div>
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <div class="container mb-15">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/speaker/assertchris.jpeg"
+                                             style="height:120px; width: 120px;">
+                                    </div>
+                                    <div class="col col-10">
+                                        <h6 class="works-year">10.00 -
+                                            10.45</h6>
+                                        <h3>Christopher Pitt <a
+                                                class="fab fa-github"
+                                                href="https://github.com/assertchris"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/assertchris"></a>
+                                        </h3>
+                                        <h4>Making async/await from first
+                                            principles</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-15">
+                                Javascript is full of new, cutting-edge syntax.
+                                One of the things that can be tricky, when
+                                approaching it from other languages, is
+                                understanding how async/await work.
+                                Would it surprise you to know that the language
+                                you’re using probably supports the same kind of
+                                syntax? I would like to show you how any
+                                language that has generators
+                                can be made to use async/await syntax. In this
+                                talk, we’ll look at what it. Takes to make an
+                                event loop, and how we can use generators inside
+                                of it to simulate
+                                async/await in almost any language.
+                            </p>
+
+                            <p>
+                                I am a developer and writer, working at <a
+                                    href="http://indiefin.com" target="_blank">http://indiefin.com</a>.
+                                I usually work on application architecture,
+                                though sometimes I build compilers or robots.
+                            </p>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <div class="container mb-15">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/speaker/brucedou.jpg"
+                                             style="height:120px; width: 120px;">
+                                    </div>
+                                    <div class="col col-10">
+                                        <h6 class="works-year">10.45 -
+                                            11.30</h6>
+                                        <h3>Bruce Dou <a class="fab fa-github"
+                                                         href="https://github.com/doubaokun"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/doubaokun"></a>
+                                        </h3>
+                                        <h4>Async and Concurrency with PHP
+                                            Swoole Coroutines</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-15">
+                                This talk will introduce how Swoole Coroutines
+                                works internally. How to adopt PHP Swoole to
+                                solve real world concurrent problems better.
+                            </p>
+                            <p>
+                                Bruce Dou is one of the maintainers of open
+                                source PHP Swoole, specialised in application
+                                performance optimisation, system cost reduction,
+                                cloud migration, web infrastructure and
+                                large-scale system architecture
+                            </p>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">11.30 - 12.00</h6>
+                            <h4 class="designation">Coffee time</h4>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <div class="container mb-15">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/speaker/clue.jpeg"
+                                             style="height:120px; width: 120px;">
+                                    </div>
+                                    <div class="col col-10">
+                                        <h6 class="works-year">12.00 -
+                                            12.45</h6>
+                                        <h3>Christian Lück <a
+                                                class="fab fa-github"
+                                                href="https://github.com/clue"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/another_clue"></a>
+                                        </h3>
+                                        <h4>Building the next generation of web
+                                            application – with PHP!?</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="mb-15">
+                                What makes nginx faster than Apache's original
+                                design? What makes Node.js applications faster
+                                than traditional web applications? How can we
+                                achieve the same benefits for our own web
+                                applications? <br>
+                                This talk discusses how we can leverage
+                                event-driven programming principles to build
+                                high performance, non-blocking, reactive,
+                                concurrent, single-threaded applications
+                                (bingo). <br>
+                                Don't worry, no need to install Node.js and `npm
+                                install` half the internet. Let's build
+                                high-performance applications with whatever
+                                language you're most comfortable with!
+                            </p>
+
+                            <p>
+                                Christian "@clue" Lück is a maintainer of
+                                @ReactPHP, public speaker and Freelance Software
+                                Engineering Consultant. When not helping others
+                                building commercial projects, he maintains a
+                                list of open-source projects. Perhaps most
+                                importantly, he’s always been passionate about
+                                pushing the limits, thinking outside the box and
+                                sharing his experience.
+                            </p>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">12.45 - 13.30</h6>
+                            <h4 class="designation">Lightning Talks / 10 minutes
+                                talks</h4>
+                            <div class="container">
+                                <div class="row mt-30">
+                                    <div class="col">
+                                        <img src="img/speaker/mmoreram.jpeg"
+                                             style="height:60px; width: 60px;">
+                                        <h4>Marc Morera <a
+                                                class="fab fa-github"
+                                                href="https://github.com/mmoreram"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/mmoreram"></a>
+                                        </h4>
+                                        <p>
+                                            <span style="font-size: 20px">DriftPHP, the Symfony of microseconds</span><br>
+                                            Know DriftPHP, a new framework
+                                            on top of Symfony5 and ReactPHP,
+                                            with responses time of
+                                            microseconds. Know the rationale
+                                            behind the project, the
+                                            components, and even check some
+                                            demos in real time. Official
+                                            project presentation and roadmap
+                                            announcements
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-30">
+                                    <div class="col">
+                                        <img src="img/speaker/sergey.jpeg"
+                                             style="height:60px; width: 60px;">
+                                        <h4>Sergey Zhuk <a
+                                                class="fab fa-github"
+                                                href="https://github.com/seregazhuk"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/zhukserega"></a>
+                                        </h4>
+                                        <p>
+                                            <span style="font-size: 20px">Tools for developing async PHP applications</span><br>
+                                            Creating a robust asynchronous
+                                            PHP application - is a real
+                                            challenge. Even the development
+                                            process of such applications is
+                                            very different from the usual
+                                            synchronous flow: you cannot say
+                                            exactly when anything in your
+                                            program is going to happen. So,
+                                            such things as testing,
+                                            debugging and restarting your
+                                            app can become tricky and weird.
+                                            In this talk, we will discuss
+                                            the most common challenges that
+                                            you can face while developing an
+                                            asynchronous application.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-30">
+                                    <div class="col">
+                                        <img src="img/speaker/geertvanbommel.png"
+                                             style="height:60px; width: 60px;">
+                                        <h4>Geert Van Bommel <a
+                                                class="fab fa-twitter"
+                                                href="https://twitter.com/geertvanbommelzhukserega"></a>
+                                        </h4>
+                                        <p>
+                                            <span style="font-size: 20px">Streams can come true!</span><br>
+                                            Geert Van Bommel is 45 years
+                                            OLD.
+
+                                            This talk is about how he didn't
+                                            have a garage to start a
+                                            business from but had to use the
+                                            basement.
+                                            How he was 24 and had never
+                                            heard of PHP and MySQL, but
+                                            built a supply chain management
+                                            system in 4 weeks and banned the
+                                            fax machine in the office.
+                                            How in 2019 he is more stubborn
+                                            than ever, still has to hear
+                                            "PHP is the wrong language", yet
+                                            built <a
+                                                href="https://www.streambiki.com/?utm_source=loop-run.io&utm_medium=talk&utm_campaign=Barcelona">Streambiki</a>
+                                            anyway.
+
+                                            Yes, he will give you tips on
+                                            how to become an
+                                            'entrePHPreneur'. Use these
+                                            tips, or he will have suffered
+                                            for nothing.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">13.30 - 15.00</h6>
+                            <h4 class="designation">Lunch time</h4>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <div class="container mb-15">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/speaker/benoit.png"
+                                             style="height:120px; width: 120px;">
+                                    </div>
+                                    <div class="col col-10">
+                                        <h6 class="works-year">15.00 -
+                                            15.45</h6>
+                                        <h3>Benoit Viguier <a
+                                                class="fab fa-github"
+                                                href="https://github.com/b-viguier"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/b_viguier"></a>
+                                        </h3>
+                                        <h4>One year of asynchronous PHP in
+                                            production</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-15">
+                                Yes, it’s possible to use asynchronous
+                                programming in Php and it can massively improve
+                                applications velocity. <br>
+                                But if it was so simple everybody would already
+                                use it. Our team started to use this paradigm
+                                one year ago, it was a success in many ways but
+                                we faced a lot of questions: <br>
+                                which applications are suited for this? How to
+                                train your team? Which tools are available? Here
+                                our feedback, from daily developments to
+                                production at M6 (french media group, part of
+                                RTL group).
+                            </p>
+
+                            <p>
+                                Backend lead developer at M6 Group (french media
+                                group), involved in catch-up-TV / SVOD / VOD web
+                                services (6play.fr and related applications).
+                                <br>
+                                Interested by architecture, algorithmic,
+                                performances, asynchronous programing, 3D
+                                rendering… <br>
+                                Former video game/CAD developer: whatever the
+                                technology, only challenges matter.
+                            </p>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">15.45 - 16.30</h6>
+                            <h4 class="designation">TBA</h4>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">16.30 - 17.15</h6>
+                            <h4 class="designation">TBA</h4>
+                        </div>
+
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <h6 class="works-year">17.15 - 18.00</h6>
+                            <h4 class="designation">TBA</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section
+            class="my-education-area bg-gray section-padding-100 bg-img bg-overlay jarallax"
+            style="background-image: none;" id="workshops"
+            data-jarallax-original-styles="background-image: url(img/bg-img/3.jpg);">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title white text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Workshops - 27th March</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="education-timeline">
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <div class="container mb-15">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/speaker/clue.jpeg"
+                                             style="height:120px; width: 120px;">
+                                    </div>
+                                    <div class="col col-10">
+                                        <h6 class="works-year">09.00 -
+                                            11.00</h6>
+                                        <h3>Christian Lück <a
+                                                class="fab fa-github"
+                                                href="https://github.com/clue"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/another_clue"></a>
+                                        </h3>
+                                        <h4>Getting started with ReactPHP –
+                                            pushing real-time data to the
+                                            browser</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="mb-15">
+                                Think about "PHP" for a few seconds… What came
+                                to mind? It’s very likely you thought about your
+                                average product catalog, a blogging platform or
+                                how the platform is inferior to things like
+                                Node.js. But wait, it’s 2020! What if I told you
+                                PHP’s huge ecosystem has way more to offer and
+                                PHP is not inferior at all to its evil cousin
+                                Node.js?
+                            </p>
+                            <p>
+
+                                In this hands-on tutorial you will learn about
+                                the core concepts of async PHP and why you too
+                                should care about ReactPHP being a real thing.
+                                The workshop has a strong focus on sparking the
+                                idea that PHP can be way faster and more
+                                versatile than you probably thought. Bring along
+                                an open mind and through lots of interesting
+                                examples and live demos learn why what sounds
+                                crazy at first might soon be a valuable addition
+                                in your toolbox.
+                            </p>
+                            <p>
+
+                                You’re already familiar with PHP and want to
+                                learn what ReactPHP is all about? Then this
+                                tutorial is for you! We will start from scratch
+                                and build a demo application that pushes data
+                                from your command line in real-time to your
+                                browser. Several scenarios are prepared, but
+                                ideally you bring in your own ideas: Let’s build
+                                an interactive chat bot, an interactive CLI tool
+                                or even an actual desktop GUI, it’s up to you!
+
+                                The tutorial assumes people are familiar with
+                                PHP, have PHP and their favorite IDE already
+                                setup, but does not require people to be
+                                familiar with ReactPHP.
+                            </p>
+                        </div>
+
+                        <!-- Single Experience -->
+                        <div class="single-experience wow fadeInUp mt-50"
+                             data-wow-delay="300ms">
+                            <div class="container mb-15">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/speaker/mmoreram.jpeg"
+                                             style="height:120px; width: 120px;">
+                                    </div>
+                                    <div class="col col-10">
+                                        <h6 class="works-year">11.30 -
+                                            13.30</h6>
+                                        <h3>Marc Morera <a
+                                                class="fab fa-github"
+                                                href="https://github.com/mmoreram"></a>
+                                            <a class="fab fa-twitter"
+                                               href="https://twitter.com/mmoreram"></a>
+                                        </h3>
+                                        <h4>Building a production-ready
+                                            application with DriftPHP</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="mb-15">
+                                We already know how to work with Promises, what
+                                an EventLoop is, and how we should be able to
+                                create a server with ReactPHP sockets. That's
+                                really nice. But how far we are from this point
+                                to build something enterprise enough to be
+                                usable in a big company? Should we rewrite (once
+                                and again) each component to be compatible with
+                                Promises? Well, let's take a deep view at
+                                DriftPHP.
+                            </p>
+                            <p>
+                                In this workshop we will install DriftPHP from
+                                the scratch, and will create an application
+                                using all available components. From 0 to 100 in
+                                two hours, including a CommandBus, an EventBus,
+                                Websockets, and some adapters to connect in a
+                                non-blocking way to our databases.
+                            </p>
+                            <p>
+                                We will check as well some performance metrics,
+                                and will evaluate how far we are to reach a
+                                first beta version.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Blog Area Start ***** -->
+    <section class="blog-area section-padding-100-50" id="tickets">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title -->
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Tickets</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Widget detalle evento - Loop Run 2020 - Entrapolis.com -->
+                <iframe id="fa_iframe_events" width="100%" height="auto"
+                        src="https://www.entrapolis.com/tickets/loop-run-2020/widget"
+                        frameborder="0" allowfullscreen></iframe>
+                <script src="https://www.entrapolis.com/resources/js/events.js"
+                        type="text/javascript"></script>
+                <!-- / Widget detalle evento - Loop Run 2020 - Entrapolis.com -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Blog Area Start ***** -->
+    <section class="blog-area section-padding-100-50" id="sponsors">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Promise Sponsor</h2>
+                    </div>
+                    <p>
+                        This conference will be possible because of the
+                        priceless help of some companies, organizations,
+                        projects and people. We'd like to thank all these
+                        entities. If you or your companies is willing to be part
+                        of the conference, please,
+                        take a look at <a href="sponsors-guide.pdf">our sponsors
+                        guide</a> and send us an email at <strong>sponsors@loop-run.io</strong>
+                        and we will look for the option that can suite the
+                        better for your company.</p>
+                </div>
+            </div>
+            <div class="row mt-15">
+
+                <div class="col-12">
+                    <!-- Single Post Area -->
+                    <a href="https://www.streambiki.com/?utm_source=loop-run.io&utm_medium=sponsor&utm_campaign=Barcelona"
+                       target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/streambiki.png"
+                                     alt="Streambiki">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- ***** Blog Area End ***** -->
+
+
+    <!-- ***** Blog Area Start ***** -->
+    <section class="blog-area section-padding-100-50"
+             id="phpcoach-sponsors">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>PHPCoach Sponsors</h2>
+                    </div>
+                    <p>
+                        In PHPCoach, the organizer of this conference, we have
+                        created many in-house courses about PHP, about how to
+                        create
+                        high performance services using Symfony and ReactPHP.
+                        All these companies will be part of the conference, and
+                        we
+                        appreciate all of them for taking care of their people
+                        training.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-15">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Post Area -->
+                    <a href="https://holded.com" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/holded.png" alt="Holded">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Post Area -->
+                    <a href="https://exoticca.com/" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/exoticca.png"
+                                     alt="Exoticca">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="http://sonosuite.com" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/sonosuite.png"
+                                     alt="Sonosuite">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Blog Area Start ***** -->
+    <section class="blog-area section-padding-100-50"
+             id="community-sponsors">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Community Sponsors</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-15">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Post Area -->
+                    <a href="https://jetbrains.com/" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/jetbrains.png"
+                                     alt="Jetbrains">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Post Area -->
+                    <a href="http://apisearch.io/" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/apisearch.png"
+                                     alt="Apisearch">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Post Area -->
+                    <a href="https://github.com/driftphp/" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/driftphp.png"
+                                     alt="DriftPHP">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Blog Area Start ***** -->
+    <section class="blog-area section-padding-100-50"
+             id="tickets-sponsor">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-12">
+                    <div class="section-title text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Tickets Sponsor</h2>
+                    </div>
+                    <p>
+                        This conference is sponsored by Entrapolis as our
+                        ticketing sponsor. We use their platform to sell tickets
+                        for this conference,
+                        so please visit <a href="https://www.entrapolis.com"
+                                           target="_blank">their website</a> and
+                        check their services. Thanks Entrapolis!
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-15">
+
+                <div class="col-12">
+                    <!-- Single Post Area -->
+
+                    <!-- Single Post Area -->
+                    <a href="https://www.entrapolis.com" target="_blank">
+                        <div class="single-post-area mb-50 wow fadeInUp logo"
+                             data-wow-delay="300ms">
+                            <div class="post-content">
+                                <img src="img/sponsor/entrapolis.png"
+                                     alt="Entrapolis">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Portfolio Area Start ***** -->
+    <section
+            class="our_creative_portfolio bg-white section-padding-100-0 clearfix"
+            id="venue">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title -->
+                    <div class="section-title mb-3 text-center wow fadeInUp"
+                         data-wow-delay="300ms">
+                        <h2>Venue</h2>
+                    </div>
+                    <p>
+                        We're happy to announce that this first edition of
+                        LoopRun will occur in <a href="">Auditori AXA</a>, in
+                        the center of Barcelona.<br/>
+                        With a capacity of 600 attendees and a huge scenario, we
+                        are sure we can provide you the best experience. The
+                        venue provides all accessibility options, so if you have
+                        any question about this, please, don't hesitate to send
+                        an email to <strong>info@loop-run.io</strong> and we
+                        will make everything to solve it.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <!-- Menu HideShow -->
-        <div class="menu-hideshow">
-            <div class="hamburger" id="ham">
-                <span class="a"></span>
-                <span class="b"></span>
+        <div class="gallery_area clearfix mt-30">
+
+            <!-- Single Gallery Area -->
+            <div class="single-gallery-item design wow fadeInUp"
+                 data-wow-delay="300ms">
+                <div class="gallery--image">
+                    <img src="img/venue/catalonia-1.jpg" alt="">
+                </div>
+                <!-- Overlay -->
+                <div class="overlay-effect d-flex align-items-center justify-content-center">
+                    <div class="overlay-effect-text text-center p-5">
+                        <h5>Gallery Item</h5>
+                        <p>Catagory</p>
+                        <a href="https://www.youtube.com/watch?v=sLxLbykSS34"
+                           class="videobtn"><i
+                                class="arrow_triangle-right_alt2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Gallery Area -->
+            <div class="single-gallery-item creative wow fadeInUp"
+                 data-wow-delay="300ms">
+                <div class="gallery--image">
+                    <img src="img/venue/auditori-axa-1.jpeg" alt="">
+                </div>
+                <!-- Overlay -->
+                <div class="overlay-effect d-flex align-items-center justify-content-center">
+                    <div class="overlay-effect-text text-center p-5">
+                        <h5>Gallery Item</h5>
+                        <p>Catagory</p>
+                        <a href="img/venue/auditori-axa-1.jpeg" class="img-zoom"
+                           data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Gallery Area -->
+            <div class="single-gallery-item creative wow fadeInUp"
+                 data-wow-delay="300ms">
+                <div class="gallery--image">
+                    <img src="img/venue/auditori-axa-2.jpeg" alt="">
+                </div>
+                <!-- Overlay -->
+                <div class="overlay-effect d-flex align-items-center justify-content-center">
+                    <div class="overlay-effect-text text-center p-5">
+                        <h5>Gallery Item</h5>
+                        <p>Catagory</p>
+                        <a href="img/venue/auditori-axa-2.jpeg" class="img-zoom"
+                           data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Gallery Area -->
+            <div class="single-gallery-item creative wow fadeInUp"
+                 data-wow-delay="300ms">
+                <div class="gallery--image">
+                    <img src="img/venue/barcelona-1.jpeg" alt="">
+                </div>
+                <!-- Overlay -->
+                <div class="overlay-effect d-flex align-items-center justify-content-center">
+                    <div class="overlay-effect-text text-center p-5">
+                        <h5>Gallery Item</h5>
+                        <p>Catagory</p>
+                        <a href="img/venue/barcelona-1.jpeg" class="img-zoom"
+                           data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Gallery Area -->
+            <div class="single-gallery-item creative wow fadeInUp"
+                 data-wow-delay="300ms">
+                <div class="gallery--image">
+                    <img src="img/venue/barcelona-2.jpeg" alt="">
+                </div>
+                <!-- Overlay -->
+                <div class="overlay-effect d-flex align-items-center justify-content-center">
+                    <div class="overlay-effect-text text-center p-5">
+                        <h5>Gallery Item</h5>
+                        <p>Catagory</p>
+                        <a href="img/venue/barcelona-2.jpeg" class="img-zoom"
+                           data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Gallery Area -->
+            <div class="single-gallery-item creative wow fadeInUp"
+                 data-wow-delay="300ms">
+                <div class="gallery--image">
+                    <img src="img/venue/castellers.png" alt="">
+                </div>
+                <!-- Overlay -->
+                <div class="overlay-effect d-flex align-items-center justify-content-center">
+                    <div class="overlay-effect-text text-center p-5">
+                        <h5>Gallery Item</h5>
+                        <p>Catagory</p>
+                        <a href="img/venue/castellers.png" class="img-zoom"
+                           data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <!-- ***** Portfolio Area End ***** -->
 
-        <!-- Contact Me -->
-        <a href="#tickets" class="contact-me-btn btn dornee-btn" id="contactMebtn"><i class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Tickets</a>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <div class="page-content">
-        <!-- ***** Welcome Area Start ***** -->
-        <section class="welcome-area bg-overlay" style="background-image: url(img/pattern.png); background-repeat: repeat" id="home">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12">
-                        <!-- Welcome Content -->
-                        <div class="welcome-content text-center wow fadeInUp" data-wow-delay="300ms">
-                            <img src="img/logo-small.png" width="20%" alt="Conference logo" />
-                            <h5><span style="font-size: 25px; font-weight: bold">6 - 7</span> March 2020 - Barcelona</h5>
-                            <h2>$loop->run();</h2>
-                            <p>Make your first steps in reactive programming with <strong>PHP</strong><br> Tickets available soon.</p>
-                            <a href="#tickets" class="btn dornee-btn mt-30"><i class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy tickets!</a>
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-bottom-area section-padding-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer--content-text text-center">
+                        <div class="footer-social-icon d-flex align-items-center justify-content-center">
+                            <a href="https://twitter.com/loop_run"
+                               data-toggle="tooltip" data-placement="top"
+                               title="Twitter"><i
+                                    class="social_twitter"></i></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Down Icon -->
-            <div class="down-icon wow fadeInUp" data-wow-delay="300ms" id="scrollDown">
-                <a href="#"><i class="arrow_down"></i></a>
-            </div>
-        </section>
-        <!-- ***** Welcome Area End ***** -->
-
-        <!-- ***** Service Area Start ***** -->
-        <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="about-the-conference">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Section Title -->
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>About the conference</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Event-driven PHP projects</h4>
-                                <p>Meet the projects that are actually leading the async, non-blocking and reactive features in PHP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-bullhorn"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Talks</h4>
-                                <p>You'll find talks about projects, architecture and all features you need to start digging about this topic.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-book"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Workshops</h4>
-                                <p>We will prepare some workshops for you. You will start working with these projects from the next day!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="icon_link"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Meet the community</h4>
-                                <p>For the very first time, you'll be able to meet the PHP Non-Blocking community from all around the world in one single place.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Hackathon</h4>
-                                <p>We will create a 24h Hackathon. Prices for the winners and tons of fun for everyone!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon" style="color: #37b758!important">
-                                <i class="fa fa-bullhorn"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4 style="color: #37b758!important">We Donate 50%</h4>
-                                <p>The 50% of the conference profits will be donated to some open source projects. You can read <a href="our-commitment.html">our commitment</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-6">
-                        <div class="service-content-area-static text-center mb-30" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon" style="color: #37b758!important">
-                                <img src="img/projects/reactphp.png" alt="ReactPHP" height="100">
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text mt-15">
-                                <p>ReactPHP is a low-level library for event-driven programming in PHP.<br/> Visit <a href="https://reactphp.org/">https://reactphp.org</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Content Area -->
-                    <div class="col-12 col-sm-6 col-lg-6">
-                        <div class="service-content-area-static text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon" style="color: #37b758!important">
-                                <img src="img/projects/swoole.png" alt="Swoole" height="100">
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text mt-15">
-                                <p>#Swoole is an open source high-performance network framework using an event-driven, asynchronous, non-blocking I/O model which makes it scalable and efficient.. Visit <a href="https://www.swoole.co.uk/">https://www.swoole.co.uk/</a></p>
-                            </div>
-                        </div>
+                        <p>This is a conference by <a href="https://php.coach"
+                                                      target="_blank">PHP
+                            Coach</a></p>
+                        <p>Copyright ©2019 All rights reserved by <a href="#"
+                                                                     target="_blank">Classy
+                            Theme</a></p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ***** Service Area End ***** -->
-
-
-        <!-- ***** My Experience Area Start ***** -->
-        <section class="my-experience-area bg-gray section-padding-100 clearfix" id="schedule">
-            <div class="container">
-                <div class="row">
-                    <!-- Section Title -->
-                    <div class="col-12">
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Schedule - 6 March</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="experience-timeline">
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">09.00 - 09.15</h6>
-                                <h4 class="designation">Welcome</h4>
-                                <p>
-                                    Welcome to the LoopRun conference.
-                                </p>
-                            </div>
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">09.15 - 10.00</h6>
-                                <h4 class="designation">Keynote</h4>
-                                <p>
-                                    TBA
-                                </p>
-                            </div>
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <div class="container mb-15">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="img/speaker/assertchris.jpeg" style="height:120px; width: 120px;">
-                                        </div>
-                                        <div class="col col-10">
-                                            <h6 class="works-year">10.00 - 10.45</h6>
-                                            <h3>Christopher Pitt <a class="fab fa-github" href="https://github.com/assertchris"></a> <a class="fab fa-twitter" href="https://twitter.com/assertchris"></a></h3>
-                                            <h4>Making async/await from first principles</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mb-15">
-                                    Javascript is full of new, cutting-edge syntax. One of the things that can be tricky, when approaching it from other languages, is understanding how async/await work.
-                                    Would it surprise you to know that the language you’re using probably supports the same kind of syntax? I would like to show you how any language that has generators
-                                    can be made to use async/await syntax. In this talk, we’ll look at what it. Takes to make an event loop, and how we can use generators inside of it to simulate
-                                    async/await in almost any language.
-                                </p>
-
-                                <p>
-                                    I am a developer and writer, working at <a href="http://indiefin.com" target="_blank">http://indiefin.com</a>. I usually work on application architecture, though sometimes I build compilers or robots.
-                                </p>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <div class="container mb-15">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="img/speaker/brucedou.jpg" style="height:120px; width: 120px;">
-                                        </div>
-                                        <div class="col col-10">
-                                            <h6 class="works-year">10.45 - 11.30</h6>
-                                            <h3>Bruce Dou <a class="fab fa-github" href="https://github.com/doubaokun"></a> <a class="fab fa-twitter" href="https://twitter.com/doubaokun"></a></h3>
-                                            <h4>Async and Concurrency with PHP Swoole Coroutines</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mb-15">
-                                    This talk will introduce how Swoole Coroutines works internally. How to adopt PHP Swoole to solve real world concurrent problems better.
-                                </p>
-                                <p>
-                                    Bruce Dou is one of the maintainers of open source PHP Swoole, specialised in application performance optimisation, system cost reduction, cloud migration, web infrastructure and large-scale system architecture
-                                </p>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">11.30 - 12.00</h6>
-                                <h4 class="designation">Coffee time</h4>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <div class="container mb-15">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="img/speaker/clue.jpeg" style="height:120px; width: 120px;">
-                                        </div>
-                                        <div class="col col-10">
-                                            <h6 class="works-year">12.00 - 12.45</h6>
-                                            <h3>Christian Lück <a class="fab fa-github" href="https://github.com/clue"></a> <a class="fab fa-twitter" href="https://twitter.com/another_clue"></a></h3>
-                                            <h4>Building the next generation of web application – with PHP!?</h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="mb-15">
-                                    What makes nginx faster than Apache's original design? What makes Node.js applications faster than traditional web applications? How can we achieve the same benefits for our own web applications? <br>
-                                    This talk discusses how we can leverage event-driven programming principles to build high performance, non-blocking, reactive, concurrent, single-threaded applications (bingo). <br>
-                                    Don't worry, no need to install Node.js and `npm install` half the internet. Let's build high-performance applications with whatever language you're most comfortable with!
-                                </p>
-
-                                <p>
-                                    Christian "@clue" Lück is a maintainer of @ReactPHP, public speaker and Freelance Software Engineering Consultant. When not helping others building commercial projects, he maintains a list of open-source projects. Perhaps most importantly, he’s always been passionate about pushing the limits, thinking outside the box and sharing his experience.
-                                </p>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">12.45 - 13.30</h6>
-                                <h4 class="designation">Lightning Talks / 10 minutes talks</h4>
-                                <div class="container">
-                                    <div class="row mt-30">
-                                        <div class="col">
-                                            <img src="img/speaker/mmoreram.jpeg" style="height:60px; width: 60px;">
-                                        </div>
-                                        <div class="col col-11">
-                                            <div class="col col-10">
-                                                <h4>Marc Morera <a class="fab fa-github" href="https://github.com/mmoreram"></a> <a class="fab fa-twitter" href="https://twitter.com/mmoreram"></a></h4>
-                                                <p>
-                                                    <span style="font-size: 20px">DriftPHP, the Symfony of microseconds</span><br>
-                                                    Know DriftPHP, a new framework on top of Symfony5 and ReactPHP, with responses time of microseconds. Know the rationale behind the project, the components, and even check some demos in real time. Official project presentation and roadmap announcements
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mt-30">
-                                        <div class="col">
-                                            <img src="img/speaker/sergey.jpeg" style="height:60px; width: 60px;">
-                                        </div>
-                                        <div class="col col-11">
-                                            <div class="col col-10">
-                                                <h4>Sergey Zhuk <a class="fab fa-github" href="https://github.com/seregazhuk"></a> <a class="fab fa-twitter" href="https://twitter.com/zhukserega"></a></h4>
-                                                <p>
-                                                    <span style="font-size: 20px">Tools for developing async PHP applications</span><br>
-                                                    Creating a robust asynchronous PHP application - is a real challenge. Even the development process of such applications is very different from the usual synchronous flow: you cannot say exactly when anything in your program is going to happen. So, such things as testing, debugging and restarting your app can become tricky and weird. In this talk, we will discuss the most common challenges that you can face while developing an asynchronous application.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mt-30">
-                                        <div class="col">
-                                            <img src="img/speaker/geertvanbommel.png" style="height:60px; width: 60px;">
-                                        </div>
-                                        <div class="col col-11">
-                                            <div class="col col-10">
-                                                <h4>Geert Van Bommel <a class="fab fa-twitter" href="https://twitter.com/geertvanbommelzhukserega"></a></h4>
-                                                <p>
-                                                    <span style="font-size: 20px">Streams can come true!</span><br>
-                                                    Geert Van Bommel is 45 years OLD.
-
-                                                    This talk is about how he didn't have a garage to start a business from but had to use the basement.
-                                                    How he was 24 and had never heard of PHP and MySQL, but built a supply chain management system in 4 weeks and banned the fax machine in the office.
-                                                    How in 2019 he is more stubborn than ever, still has to hear "PHP is the wrong language", yet built <a href="https://www.streambiki.com/?utm_source=loop-run.io&utm_medium=talk&utm_campaign=Barcelona">Streambiki</a> anyway.
-
-                                                    Yes, he will give you tips on how to become an 'entrePHPreneur'.  Use these tips, or he will have suffered for nothing.
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">13.30 - 15.00</h6>
-                                <h4 class="designation">Lunch time</h4>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <div class="container mb-15">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="img/speaker/benoit.png" style="height:120px; width: 120px;">
-                                        </div>
-                                        <div class="col col-10">
-                                            <h6 class="works-year">15.00 - 15.45</h6>
-                                            <h3>Benoit Viguier <a class="fab fa-github" href="https://github.com/b-viguier"></a> <a class="fab fa-twitter" href="https://twitter.com/b_viguier"></a></h3>
-                                            <h4>One year of asynchronous PHP in production</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mb-15">
-                                    Yes, it’s possible to use asynchronous programming in Php and it can massively improve applications velocity. <br>
-                                    But if it was so simple everybody would already use it. Our team started to use this paradigm one year ago, it was a success in many ways but we faced a lot of questions: <br>
-                                    which applications are suited for this? How to train your team? Which tools are available? Here our feedback, from daily developments to production at M6 (french media group, part of RTL group).
-                                </p>
-
-                                <p>
-                                    Backend lead developer at M6 Group (french media group), involved in catch-up-TV / SVOD / VOD web services (6play.fr and related applications). <br>
-                                    Interested by architecture, algorithmic, performances, asynchronous programing, 3D rendering… <br>
-                                    Former video game/CAD developer: whatever the technology, only challenges matter.
-                                </p>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">15.45 - 16.30</h6>
-                                <h4 class="designation">TBA</h4>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">16.30 - 17.15</h6>
-                                <h4 class="designation">TBA</h4>
-                            </div>
-
-
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">17.15 - 18.00</h6>
-                                <h4 class="designation">TBA</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ***** My Experience Area Start ***** -->
-        <section class="my-experience-area bg-gray section-padding-100 clearfix" id="hackathon">
-            <div class="container">
-                <div class="row">
-                    <!-- Section Title -->
-                    <div class="col-12">
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Workshops - 7 March (soon)</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ***** Blog Area Start ***** -->
-        <section class="blog-area bg-gray section-padding-100-50" id="tickets">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Section Title -->
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Tickets</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Widget detalle evento - Loop Run 2020 - Entrapolis.com -->
-                    <iframe id="fa_iframe_events" width="100%" height="auto" src="https://www.entrapolis.com/tickets/loop-run-2020/widget" frameborder="0" allowfullscreen></iframe>
-                    <script src="https://www.entrapolis.com/resources/js/events.js" type="text/javascript"></script>
-                    <!-- / Widget detalle evento - Loop Run 2020 - Entrapolis.com -->
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- ***** Blog Area Start ***** -->
-        <section class="blog-area bg-gray section-padding-100-50" id="sponsors">
-            <div class="container">
-                <div class="row">
-                    <!-- Section Title -->
-                    <div class="col-12">
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Promise Sponsor</h2>
-                        </div>
-                        <p>
-                            This conference will be possible because of the priceless help of some companies, organizations, projects and people. We'd like to thank all these entities. If you or your companies is willing to be part of the conference, please,
-                            take a look at <a href="sponsors-guide.pdf">our sponsors guide</a> and send us an email at <strong>sponsors@loop-run.io</strong> and we will look for the option that can suite the better for your company.</p>
-                    </div>
-                </div>
-                <div class="row mt-15">
-
-                    <div class="col-12">
-                        <!-- Single Post Area -->
-                        <a href="https://www.streambiki.com/?utm_source=loop-run.io&utm_medium=sponsor&utm_campaign=Barcelona" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/streambiki.png" alt="Streambiki">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-            </div>
-        </section>
-        <!-- ***** Blog Area End ***** -->
-
-
-
-        <!-- ***** Blog Area Start ***** -->
-        <section class="blog-area bg-gray section-padding-100-50" id="phpcoach-sponsors">
-            <div class="container">
-                <div class="row">
-                    <!-- Section Title -->
-                    <div class="col-12">
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>PHPCoach Sponsors</h2>
-                        </div>
-                        <p>
-                            In PHPCoach, the organizer of this conference, we have created many in-house courses about PHP, about how to create
-                            high performance services using Symfony and ReactPHP. All these companies will be part of the conference, and we
-                            appreciate all of them for taking care of their people training.
-                        </p>
-                    </div>
-                </div>
-                <div class="row mt-15">
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Post Area -->
-                        <a href="https://holded.com" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/holded.png" alt="Holded">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Post Area -->
-                        <a href="https://exoticca.com/" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/exoticca.png" alt="Exoticca">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="http://sonosuite.com" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/sonosuite.png" alt="Sonosuite">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ***** Blog Area Start ***** -->
-        <section class="blog-area bg-gray section-padding-100-50" id="community-sponsors">
-            <div class="container">
-                <div class="row">
-                    <!-- Section Title -->
-                    <div class="col-12">
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Community Sponsors</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-15">
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Post Area -->
-                        <a href="https://jetbrains.com/" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/jetbrains.png" alt="Jetbrains">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Post Area -->
-                        <a href="http://apisearch.io/" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/apisearch.png" alt="Apisearch">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Post Area -->
-                        <a href="https://github.com/driftphp/" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/driftphp.png" alt="DriftPHP">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- ***** Blog Area Start ***** -->
-        <section class="blog-area bg-gray section-padding-100-50" id="tickets-sponsor">
-            <div class="container">
-                <div class="row">
-                    <!-- Section Title -->
-                    <div class="col-12">
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Tickets Sponsor</h2>
-                        </div>
-                        <p>
-                            This conference is sponsored by Entrapolis as our ticketing sponsor. We use their platform to sell tickets for this conference,
-                            so please visit <a href="https://www.entrapolis.com" target="_blank">their website</a> and check their services. Thanks Entrapolis!
-                        </p>
-                    </div>
-                </div>
-                <div class="row mt-15">
-
-                    <div class="col-12">
-                        <!-- Single Post Area -->
-
-                        <!-- Single Post Area -->
-                        <a href="https://www.entrapolis.com" target="_blank">
-                            <div class="single-post-area mb-50 wow fadeInUp logo" data-wow-delay="300ms">
-                                <div class="post-content">
-                                    <img src="img/sponsor/entrapolis.png" alt="Entrapolis">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- ***** Portfolio Area Start ***** -->
-        <section class="our_creative_portfolio bg-white section-padding-100-0 clearfix" id="venue">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Section Title -->
-                        <div class="section-title mb-3 text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Venue</h2>
-                        </div>
-                        <p>
-                            We're happy to announce that this first edition of LoopRun will occur in <a href="">Auditori AXA</a>, in the center of Barcelona.<br />
-                            With a capacity of 600 attendees and a huge scenario, we are sure we can provide you the best experience. The venue provides all accessibility options, so if you have any question about this, please, don't hesitate to send
-                            an email to <strong>info@loop-run.io</strong> and we will make everything to solve it.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery_area clearfix mt-30">
-
-                <!-- Single Gallery Area -->
-                <div class="single-gallery-item design wow fadeInUp" data-wow-delay="300ms">
-                    <div class="gallery--image">
-                        <img src="img/venue/catalonia-1.jpg" alt="">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay-effect d-flex align-items-center justify-content-center">
-                        <div class="overlay-effect-text text-center p-5">
-                            <h5>Gallery Item</h5>
-                            <p>Catagory</p>
-                            <a href="https://www.youtube.com/watch?v=sLxLbykSS34" class="videobtn"><i class="arrow_triangle-right_alt2"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Area -->
-                <div class="single-gallery-item creative wow fadeInUp" data-wow-delay="300ms">
-                    <div class="gallery--image">
-                        <img src="img/venue/auditori-axa-1.jpeg" alt="">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay-effect d-flex align-items-center justify-content-center">
-                        <div class="overlay-effect-text text-center p-5">
-                            <h5>Gallery Item</h5>
-                            <p>Catagory</p>
-                            <a href="img/venue/auditori-axa-1.jpeg" class="img-zoom" data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Area -->
-                <div class="single-gallery-item creative wow fadeInUp" data-wow-delay="300ms">
-                    <div class="gallery--image">
-                        <img src="img/venue/auditori-axa-2.jpeg" alt="">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay-effect d-flex align-items-center justify-content-center">
-                        <div class="overlay-effect-text text-center p-5">
-                            <h5>Gallery Item</h5>
-                            <p>Catagory</p>
-                            <a href="img/venue/auditori-axa-2.jpeg" class="img-zoom" data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Area -->
-                <div class="single-gallery-item creative wow fadeInUp" data-wow-delay="300ms">
-                    <div class="gallery--image">
-                        <img src="img/venue/barcelona-1.jpeg" alt="">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay-effect d-flex align-items-center justify-content-center">
-                        <div class="overlay-effect-text text-center p-5">
-                            <h5>Gallery Item</h5>
-                            <p>Catagory</p>
-                            <a href="img/venue/barcelona-1.jpeg" class="img-zoom" data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Area -->
-                <div class="single-gallery-item creative wow fadeInUp" data-wow-delay="300ms">
-                    <div class="gallery--image">
-                        <img src="img/venue/barcelona-2.jpeg" alt="">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay-effect d-flex align-items-center justify-content-center">
-                        <div class="overlay-effect-text text-center p-5">
-                            <h5>Gallery Item</h5>
-                            <p>Catagory</p>
-                            <a href="img/venue/barcelona-2.jpeg" class="img-zoom" data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Area -->
-                <div class="single-gallery-item creative wow fadeInUp" data-wow-delay="300ms">
-                    <div class="gallery--image">
-                        <img src="img/venue/castellers.png" alt="">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay-effect d-flex align-items-center justify-content-center">
-                        <div class="overlay-effect-text text-center p-5">
-                            <h5>Gallery Item</h5>
-                            <p>Catagory</p>
-                            <a href="img/venue/castellers.png" class="img-zoom" data-effect="mfp-zoom-in"><i class="icon_search"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Portfolio Area End ***** -->
-
-        <!-- ***** Footer Area Start ***** -->
-        <footer class="footer-bottom-area section-padding-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="footer--content-text text-center">
-                            <div class="footer-social-icon d-flex align-items-center justify-content-center">
-                                <a href="https://twitter.com/loop_run" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="social_twitter"></i></a>
-                            </div>
-                            <p>This is a conference by <a href="https://php.coach" target="_blank">PHP Coach</a></p>
-                            <p>Copyright ©2019 All rights reserved by <a href="#" target="_blank">Classy Theme</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- ***** Footer Area End ***** -->
-    </div>
-
-    <!-- All JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bundle.js"></script>
-    <script src="js/default/active.js"></script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41917921-7"></script>
-    <script>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+</div>
+
+<!-- All JavaScript Files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bundle.js"></script>
+<script src="js/default/active.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-41917921-7"></script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-41917921-7');
-    </script>
 
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c11fd3061a6f0d72f6464d2f4/89113e4c09cf62b5b077e9ada.js");</script>
-    <script src="https://js.stripe.com/v3/"></script>
+
+
+
+</script>
+
+<script id="mcjs">
+    !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c11fd3061a6f0d72f6464d2f4/89113e4c09cf62b5b077e9ada.js");
+
+
+
+</script>
+<script src="https://js.stripe.com/v3/"></script>
 
 </body>
 
