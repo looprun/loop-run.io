@@ -13,16 +13,11 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
     <link rel="icon" href="img/ico.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-
-    <style>
-        #commitment ul li {
-            list-style: inside;
-            color: #777;
-            margin-top: 15px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
+          rel="stylesheet">
 
 </head>
 
@@ -39,21 +34,31 @@
     <!-- ***** Header Area Start ***** -->
     <header class="header-area">
         <!-- Logo -->
-        <a href="#home" class="nav-brand"><img src="img/logo.png" alt=""></a>
+        <a href="/" class="nav-brand"><img src="img/logo-white.png" alt=""
+                                               width="70%"></a>
 
         <!-- Menu -->
         <div class="dornee-menu pl-5">
             <nav class="dorneenav">
                 <ul id="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="/#about-the-conference">About the conference</a></li>
-                    <li class="active"><a href="/our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our commitment</a></li>
-                    <li><a href="/#schedule"><i class="fa fa-star" style="color: gold"></i>&nbsp;&nbsp;Schedule</a></li>
-                    <li><a href="/#workshops"><i class="fa fa-star" style="color: gold"></i>&nbsp;&nbsp;Workshops</a>
-                    <li><a href="/#tickets"><i class="fa fa-ticket-alt" style="color: gold"></i>&nbsp;&nbsp;Tickets available!</a></li>
-                    <li><a href="/#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a></li>
-                    <li><a href="/#venue"><i class="fa fa-school"></i>&nbsp;&nbsp;Venue</a></li>
-                    <li><a href="/code-of-conduct.html"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Code of conduct</a></li>
+                    <li><a href="/#home">Home</a></li>
+                    <li><a href="/#about-the-conference">About the conference</a>
+                    </li>
+                    <li class="active"><a href="our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our
+                        commitment</a></li>
+                    <li><a href="/#talks"><i class="fa fa-star green"></i>&nbsp;&nbsp;Talks</a>
+                    </li>
+                    <li><a href="/#workshops"><i class="fa fa-star green"></i>&nbsp;&nbsp;Workshops</a>
+                    </li>
+                    <li><a href="/#tickets"><i class="fa fa-ticket-alt green"></i>&nbsp;&nbsp;Tickets
+                        available!</a></li>
+                    <li><a href="/#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a>
+                    </li>
+                    <li><a href="/#venue"><i class="fa fa-school"></i>&nbsp;&nbsp;Venue</a>
+                    </li>
+                    <li><a href="code-of-conduct.html"><i
+                            class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Code
+                        of conduct</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,31 +72,56 @@
         </div>
 
         <!-- Contact Me -->
-        <a href="/#tickets" class="contact-me-btn btn dornee-btn" id="contactMebtn"><i class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Tickets</a>
+        <a href="/#tickets" id="buy-now-small-button"
+           class="green contact-me-btn "><i
+                class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy tickets!</a>
     </header>
     <!-- ***** Header Area End ***** -->
 
     <div class="page-content">
+
         <!-- ***** Welcome Area Start ***** -->
-        <section class="point-zone bg-gray clearfix pb-5 pt-5" id="commitment">
-            <div class="container">
-                <div class="row">
+        <section class="welcome-area bg-overlay"
+                 style="background-image: url(img/steps.jpg); background-size: cover;"
+                 id="home">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
                     <div class="col-12">
-                        <!-- Section Title -->
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Our commitment</h2>
+                        <!-- Welcome Content -->
+                        <div class="welcome-content text-center wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <img src="img/logo-long-white.png"
+                                 alt="Conference logo"
+                                 style="margin-bottom: 50px;"/>
+                            <h5 style="font-size: 35px;" class="barlow">26 - 27
+                                March 2020 - Barcelona</h5>
+                            <p class="barlow mb-80"
+                               style="line-height: 1; font-size: 25px;">Make your
+                                first steps in reactive programming with
+                                <strong>PHP</strong></p>
+                            <a href="/#tickets" id="buy-now-main-button"
+                               class="green"><i
+                                    class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy
+                                tickets!</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
 
+        <!-- ***** Welcome Area Start ***** -->
+        <section class="mt-100 mb-100" id="our-commitment">
+            <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <h3>Our commitment</h3>
                         <p>
                             Loop-Run Barcelona is a brand new conference, built on top of some important commitments related to how we understand communities, conferences and open source. each one of them is equally important, and
                             we will make sure that our actions are always in the directions of our values.
                         </p>
                         <ul>
-                            <li>This conference is a profit one. The organization will make some money because of sponsors and tickets. But we understand that this conference would'nt be possible without the work of dozens of people that spend and have spent tons and tons of hours making open source code
+                            <li>This is a profit conference. The organization will make some money because of sponsors and tickets. But we understand that this conference would'nt be possible without the work of dozens of people that spend and have spent tons and tons of hours making open source code
                                 and building amazing open source libraries. This is why we consider extremely necessary to include all these projects part of the organization as well.
                             </li>
                             <li>Making all these projects part of the organization means that they, as a group, will have the <strong>50%</strong> of the profit of the conference.</li>
@@ -99,8 +129,7 @@
                                 days after the conference in a completely transparent way, so stay tuned and follow the instructions.
                             </li>
                             <li>Projects will only be able to access to this donations if they are part of the conference somehow, having a talk or a small lightning talk. If you create an impact to our attendees, they will create an impact to your project. This will be our commitment.</li>
-                            <li>The equity of the donation will depend on the price of the ticket. This means that more expensive tickets will have a higher relative value than early bird tickets.</li>
-                            <li>Free access tickets raffled by companies, communities, universities or the organization will be excluded to this action.</li>
+                            <li>Free access tickets raffled by companies, communities, universities or the organization will be excluded of this action.</li>
                             <li>We will consider as profit of the conference all this left money quantity once flights, hotels, the whole venue, all the conference day related stuff, and the calculated work time from the organization members is paid. All this numbers will be published as well.</li>
                             <li>We encourage all conferences on top of open source projects to do the same. Remember that your conferences wouldn't be possible without the work of all these people.</li>
                             <li>We encourage open source maintainers to actively ask for these kind of actions. Open source success is our responsibility.</li>

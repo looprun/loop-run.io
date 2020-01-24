@@ -13,45 +13,11 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
     <link rel="icon" href="img/ico.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-
-    <style>
-        .service-content-area:hover a {
-            color: #e1b12c;
-            font-weight: bold;
-        }
-
-        .tool {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        .tool img {
-            height: 1em;
-            width: 1em;
-        }
-
-
-
-        #cfp ul li, #cfp ul li:hover {
-            list-style: inherit;
-            line-height: 32px;
-            color: #717273;
-            font-size: 16px;
-
-        }
-
-        #cfp ul  {
-            margin-left: 30px;
-        }
-
-        p.important {
-            padding-left: 20px;
-            border-left: red 10px solid;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
+          rel="stylesheet">
 
 </head>
 
@@ -68,21 +34,31 @@
     <!-- ***** Header Area Start ***** -->
     <header class="header-area">
         <!-- Logo -->
-        <a href="#home" class="nav-brand"><img src="img/logo.png" alt=""></a>
+        <a href="/" class="nav-brand"><img src="img/logo-white.png" alt=""
+                                               width="70%"></a>
 
         <!-- Menu -->
         <div class="dornee-menu pl-5">
             <nav class="dorneenav">
                 <ul id="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="/#about-the-conference">About the conference</a></li>
-                    <li><a href="/our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our commitment</a></li>
-                    <li><a href="/#schedule"><i class="fa fa-star" style="color: gold"></i>&nbsp;&nbsp;Schedule</a></li>
-                    <li><a href="/#workshops"><i class="fa fa-star" style="color: gold"></i>&nbsp;&nbsp;Workshops</a>
-                    <li><a href="/#tickets"><i class="fa fa-ticket-alt" style="color: gold"></i>&nbsp;&nbsp;Tickets available!</a></li>
-                    <li><a href="/#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a></li>
-                    <li><a href="/#venue"><i class="fa fa-school"></i>&nbsp;&nbsp;Venue</a></li>
-                    <li class="active"><a href="/code-of-conduct.html"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Code of conduct</a></li>
+                    <li><a href="/#home">Home</a></li>
+                    <li><a href="/#about-the-conference">About the conference</a>
+                    </li>
+                    <li><a href="our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our
+                        commitment</a></li>
+                    <li><a href="/#talks"><i class="fa fa-star green"></i>&nbsp;&nbsp;Talks</a>
+                    </li>
+                    <li><a href="/#workshops"><i class="fa fa-star green"></i>&nbsp;&nbsp;Workshops</a>
+                    </li>
+                    <li><a href="/#tickets"><i class="fa fa-ticket-alt green"></i>&nbsp;&nbsp;Tickets
+                        available!</a></li>
+                    <li><a href="/#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a>
+                    </li>
+                    <li><a href="/#venue"><i class="fa fa-school"></i>&nbsp;&nbsp;Venue</a>
+                    </li>
+                    <li class="active"><a href="code-of-conduct.html"><i
+                            class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Code
+                        of conduct</a></li>
                 </ul>
             </nav>
         </div>
@@ -96,27 +72,53 @@
         </div>
 
         <!-- Contact Me -->
-        <a href="/#tickets" class="contact-me-btn btn dornee-btn" id="contactMebtn"><i class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Tickets</a>
+        <a href="/#tickets" id="buy-now-small-button"
+           class="green contact-me-btn "><i
+                class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy tickets!</a>
     </header>
     <!-- ***** Header Area End ***** -->
 
     <div class="page-content">
+
         <!-- ***** Welcome Area Start ***** -->
-        <section class="point-zone bg-gray clearfix pb-5 pt-5" id="requisites">
-            <div class="container">
-                <div class="row">
+        <section class="welcome-area bg-overlay"
+                 style="background-image: url(img/steps.jpg); background-size: cover;"
+                 id="home">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
                     <div class="col-12">
-                        <!-- Section Title -->
-                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><i class="fa fa-exclamation-triangle"></i>&nbsp;Code of Conduct</h2>
+                        <!-- Welcome Content -->
+                        <div class="welcome-content text-center wow fadeInUp"
+                             data-wow-delay="300ms">
+                            <img src="img/logo-long-white.png"
+                                 alt="Conference logo"
+                                 style="margin-bottom: 50px;"/>
+                            <h5 style="font-size: 35px;" class="barlow">26 - 27
+                                March 2020 - Barcelona</h5>
+                            <p class="barlow mb-80"
+                               style="line-height: 1; font-size: 25px;">Make your
+                                first steps in reactive programming with
+                                <strong>PHP</strong></p>
+                            <a href="/#tickets" id="buy-now-main-button"
+                               class="green"><i
+                                    class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy
+                                tickets!</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+
+        <!-- ***** Welcome Area Start ***** -->
+        <section class="mt-100 mb-100">
+            <div class="container">
 
                 <div class="row">
                     <div class="col-12">
 
-                        <h3>The Quick Version</h3>
+                        <h3>Code of Conduct - The Quick Version</h3>
                         <p>
                             Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices.
                             We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media.

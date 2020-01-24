@@ -14,126 +14,12 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
     <link rel="icon" href="img/ico.ico" type="image/x-icon"/>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-
-    <style>
-        .service-content-area:hover a {
-            color: #e1b12c;
-            font-weight: bold;
-        }
-
-        .tool {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        .tool img {
-            height: 1em;
-            width: 1em;
-        }
-
-
-        #cfp ul li, #cfp ul li:hover {
-            list-style: inherit;
-            line-height: 32px;
-            color: #717273;
-            font-size: 16px;
-
-        }
-
-        #cfp ul {
-            margin-left: 30px;
-        }
-
-        p.important {
-            padding-left: 20px;
-            border-left: red 10px solid;
-        }
-
-        input[type=checkbox] {
-            display: inline;
-            height: inherit;
-            width: inherit;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        .sponsor-types .element li {
-            font-size: 14px;
-            color: #666;
-            position: relative;
-            margin-top: 5px;
-        }
-
-        .sponsor-types .element li.price {
-            font-size: 17px;
-            margin-top: 10px;
-            color: #444;
-        }
-
-        .sponsor-types .element li .value {
-            position: absolute;
-            right: 0;
-        }
-
-        .sponsor-types .element li .value.fa-check-circle {
-            color: #34ce57;
-        }
-
-        .sponsor-types .element li .value.fa-times-circle {
-            color: #c82333;
-        }
-
-        .logo {
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .single-experience {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .single-experience .fab {
-            font-size: 1rem;
-            color: #999;
-        }
-
-        .single-experience .fab:hover {
-            font-family: "Font Awesome 5 Brands";
-        }
-
-        .service-content-area-static {
-            padding: 50px 30px;
-            position: relative;
-            z-index: 1;
-            background-color: #ffffff;
-        }
-
-        .service-content-area-static .service-icon {
-            z-index: 2;
-            color: #182C61;
-            display: block;
-            margin-bottom: 5px;
-            position: relative;
-            font-size: 52px;
-        }
-
-        .single-experience img {
-            max-width: 1000px !important;
-        }
-
-        .bg-gray p {
-            color: #ffffff;
-        }
-
-        .bg-gray .fab {
-            color: #ffffff;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
+          rel="stylesheet">
 
 </head>
 
@@ -150,7 +36,7 @@
 <!-- ***** Header Area Start ***** -->
 <header class="header-area">
     <!-- Logo -->
-    <a href="#home" class="nav-brand"><img src="img/logo-small.png" alt=""
+    <a href="/#home" class="nav-brand"><img src="img/logo-white.png" alt=""
                                            width="70%"></a>
 
     <!-- Menu -->
@@ -162,14 +48,11 @@
                 </li>
                 <li><a href="our-commitment.html"><i class="fa fa-star"></i>&nbsp;&nbsp;Our
                     commitment</a></li>
-                <li><a href="#schedule"><i class="fa fa-star"
-                                           style="color: gold"></i>&nbsp;&nbsp;Schedule</a>
+                <li><a href="#talks"><i class="fa fa-star green"></i>&nbsp;&nbsp;Talks</a>
                 </li>
-                <li><a href="#workshops"><i class="fa fa-star"
-                                            style="color: gold"></i>&nbsp;&nbsp;Workshops</a>
+                <li><a href="#workshops"><i class="fa fa-star green"></i>&nbsp;&nbsp;Workshops</a>
                 </li>
-                <li><a href="#tickets"><i class="fa fa-ticket-alt"
-                                          style="color: gold"></i>&nbsp;&nbsp;Tickets
+                <li><a href="#tickets"><i class="fa fa-ticket-alt green"></i>&nbsp;&nbsp;Tickets
                     available!</a></li>
                 <li><a href="#sponsors"><i class="fa fa-medal"></i>&nbsp;&nbsp;Sponsors</a>
                 </li>
@@ -190,16 +73,16 @@
         </div>
     </div>
 
-    <!-- Contact Me -->
-    <a href="#tickets" class="contact-me-btn btn dornee-btn"
-       id="contactMebtn"><i class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Tickets</a>
+    <a href="#tickets" id="buy-now-small-button"
+       class="green contact-me-btn "><i
+            class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy tickets!</a>
 </header>
 <!-- ***** Header Area End ***** -->
 
 <div class="page-content">
     <!-- ***** Welcome Area Start ***** -->
     <section class="welcome-area bg-overlay"
-             style="background-image: url(img/pattern.png); background-repeat: repeat"
+             style="background-image: url(img/steps.jpg); background-size: cover;"
              id="home">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -207,24 +90,22 @@
                     <!-- Welcome Content -->
                     <div class="welcome-content text-center wow fadeInUp"
                          data-wow-delay="300ms">
-                        <img src="img/logo-small.png" width="20%"
-                             alt="Conference logo"/>
-                        <h5><span style="font-size: 25px; font-weight: bold">26 - 27</span>
+                        <img src="img/logo-long-white.png"
+                             alt="Conference logo"
+                             style="margin-bottom: 50px;"/>
+                        <h5 style="font-size: 35px;" class="barlow">26 - 27
                             March 2020 - Barcelona</h5>
-                        <h2>$loop->run();</h2>
-                        <p>Make your first steps in reactive programming with
+                        <p class="barlow mb-80"
+                           style="line-height: 1; font-size: 25px;">Make your
+                            first steps in reactive programming with
                             <strong>PHP</strong></p>
-                        <a href="#tickets" class="btn dornee-btn mt-30"><i
+                        <a href="#tickets" id="buy-now-main-button"
+                           class="green"><i
                                 class="fa fa-ticket-alt"></i>&nbsp;&nbsp;Buy
                             tickets!</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Down Icon -->
-        <div class="down-icon wow fadeInUp" data-wow-delay="300ms"
-             id="scrollDown">
-            <a href="#"><i class="arrow_down"></i></a>
         </div>
     </section>
     <!-- ***** Welcome Area End ***** -->
@@ -236,8 +117,7 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Section Title -->
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center">
                         <h2>About the conference</h2>
                     </div>
                 </div>
@@ -340,13 +220,12 @@
                     <div class="service-content-area-static text-center mb-30 wow fadeInUp"
                          data-wow-delay="300ms">
                         <!-- Icon -->
-                        <div class="service-icon"
-                             style="color: #37b758!important">
+                        <div class="service-icon std-green">
                             <i class="fa fa-bullhorn"></i>
                         </div>
                         <!-- Content text -->
                         <div class="service-content-text">
-                            <h4 style="color: #37b758!important">We Donate
+                            <h4 class="std-green">We Donate
                                 50%</h4>
                             <p>The 50% of the conference profits will be donated
                                 to some open source projects. You can read <a
@@ -381,8 +260,7 @@
                     <div class="service-content-area-static text-center mb-30 wow fadeInUp"
                          data-wow-delay="300ms">
                         <!-- Icon -->
-                        <div class="service-icon"
-                             style="color: #37b758!important">
+                        <div class="service-icon">
                             <img src="img/projects/swoole.png" alt="Swoole"
                                  height="100">
                         </div>
@@ -405,14 +283,13 @@
 
     <!-- ***** My Experience Area Start ***** -->
     <section class="my-experience-area section-padding-100 clearfix"
-             id="schedule">
+             id="talks">
         <div class="container">
             <div class="row">
                 <!-- Section Title -->
                 <div class="col-12">
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
-                        <h2>Schedule - 26 March</h2>
+                    <div class="rounded-section-title text-center">
+                        <h2>Talks - 26th March</h2>
                     </div>
                 </div>
             </div>
@@ -847,16 +724,13 @@
     </section>
 
 
-    <section
-            class="my-education-area bg-gray section-padding-100 bg-img bg-overlay jarallax"
-            style="background-image: none;" id="workshops"
-            data-jarallax-original-styles="background-image: url(img/bg-img/3.jpg);">
+    <section class="workshop" id="workshops">
         <div class="container">
             <div class="row">
                 <!-- Section Title -->
                 <div class="col-12">
-                    <div class="section-title white text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center"
+                         style="width:520px;">
                         <h2>Workshops - 27th March</h2>
                     </div>
                 </div>
@@ -931,7 +805,17 @@
                                 familiar with ReactPHP.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="workshop">
+        <div class="row">
+            <div class="col-12">
+                <div class="education-timeline">
+                    <div class="container">
                         <!-- Single Experience -->
                         <div class="single-experience wow fadeInUp mt-50"
                              data-wow-delay="300ms">
@@ -981,6 +865,17 @@
                                 first beta version.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workshop">
+        <div class="row">
+            <div class="col-12">
+                <div class="education-timeline">
+                    <div class="container">
 
                         <!-- Single Experience -->
                         <div class="single-experience wow fadeInUp mt-50"
@@ -1031,9 +926,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <!-- Section Title -->
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center">
                         <h2>Tickets</h2>
                     </div>
                 </div>
@@ -1058,8 +951,7 @@
             <div class="row">
                 <!-- Section Title -->
                 <div class="col-12">
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center">
                         <h2>Promise Sponsor</h2>
                     </div>
                     <p>
@@ -1101,12 +993,13 @@
             <div class="row">
                 <!-- Section Title -->
                 <div class="col-12">
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center">
                         <h2>PHPCoach Sponsors</h2>
                     </div>
                     <p>
-                        In PHPCoach, the organizer of this conference, we have
+                        In <a href="https://php.coach"
+                              target="_blank">PHPCoach</a>, the organizer of
+                        this conference, we have
                         created many in-house courses about PHP, about how to
                         create
                         high performance services using Symfony and ReactPHP.
@@ -1167,8 +1060,7 @@
             <div class="row">
                 <!-- Section Title -->
                 <div class="col-12">
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center">
                         <h2>Community Sponsors</h2>
                     </div>
                 </div>
@@ -1225,9 +1117,8 @@
             <div class="row">
                 <!-- Section Title -->
                 <div class="col-12">
-                    <div class="section-title text-center wow fadeInUp"
-                         data-wow-delay="300ms">
-                        <h2>Tickets Sponsor</h2>
+                    <div class="rounded-section-title text-center">
+                        <h2>Tickets Sponsors</h2>
                     </div>
                     <p>
                         This conference is sponsored by Entrapolis as our
@@ -1268,8 +1159,7 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Section Title -->
-                    <div class="section-title mb-3 text-center wow fadeInUp"
-                         data-wow-delay="300ms">
+                    <div class="rounded-section-title text-center">
                         <h2>Venue</h2>
                     </div>
                     <p>
@@ -1448,10 +1338,12 @@
 
 
 
+
 </script>
 
 <script id="mcjs">
     !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c11fd3061a6f0d72f6464d2f4/89113e4c09cf62b5b077e9ada.js");
+
 
 
 
