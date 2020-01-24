@@ -603,7 +603,7 @@ textarea:invalid {
     .header-area {
       left: 0;
       width: 100%;
-      height: 70px;
+      height: 95px;
       min-height: 70px;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -613,7 +613,7 @@ textarea:invalid {
     .header-area {
       left: 0;
       width: 100%;
-      height: 70px;
+      height: 95px;
       min-height: 70px;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -623,7 +623,7 @@ textarea:invalid {
     .header-area {
       left: 0;
       width: 100%;
-      height: 70px;
+      height: 95px;
       min-height: 70px;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -891,16 +891,16 @@ textarea:invalid {
     z-index: -1; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .welcome-area {
-      height: 820px; } }
+      height: 900px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .welcome-area {
-      height: 700px; } }
+      height: 900px; } }
   @media only screen and (max-width: 767px) {
     .welcome-area {
-      height: 650px; } }
+      height: 800px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .welcome-area {
-      height: 700px; } }
+      height: 900px; } }
   .welcome-area .welcome-content {
     position: relative;
     z-index: 1; }
