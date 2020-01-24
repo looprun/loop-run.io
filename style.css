@@ -397,13 +397,13 @@ textarea:invalid {
   top: 0; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .progress-container {
-      top: 70px; } }
+      top: 95px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .progress-container {
-      top: 70px; } }
+      top: 95px; } }
   @media only screen and (max-width: 767px) {
     .progress-container {
-      top: 70px; } }
+      top: 95px; } }
   .progress-container .progress-bar {
     height: 3px;
     background: #37b758;
